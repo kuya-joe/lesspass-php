@@ -54,7 +54,7 @@ class LessPassGenerator
 	 */
 	public function generatePassword($site, $login, $masterPassword, $passwordProfile = NULL)
 	{
-		if ($passwordProfile = NULL) {
+		if ($passwordProfile == NULL) {
 			$passwordProfile = $this->passwordProfile;
 		}
 		$passwordProfile = $this->getPasswordProfile($passwordProfile);
